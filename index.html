@@ -1,149 +1,41 @@
-<!DOCTYPE html><html lang="en">
+<div class="container">
 
-<head>
+  <h1>Crypto Investment Dashboard</h1>
 
-  <meta charset="UTF-8" />
+  <p class="address">Platform Address: 0xABCDEF1234567890YOURPLATFORMADDRESS</p>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <div class="user-info">
 
-  <title>Crypto Investment Dashboard</title>
+    <input type="text" id="nameInput" placeholder="Enter your name">
 
-  <style>
+    <button onclick="registerUser()">Register</button>
 
-    body {
+    <p id="userIcon"></p>
 
-      margin: 0;
+    <p id="userIdDisplay"></p>
 
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  </div>
 
-      background-color: #000;
+  <div class="investment-form">
 
-      color: #fff;
+    <input type="number" id="amount" placeholder="Enter amount">
 
-    }header {
+    <select id="crypto">
 
-  background-color: #0d0d2b;
+      <option value="ETH">Ethereum (ETH)</option>
 
-  padding: 20px;
+      <option value="BTC">Bitcoin (BTC)</option>
 
-  text-align: center;
+      <option value="TRX">Tron (TRX)</option>
 
-  font-size: 24px;
+    </select>
 
-  color: #00bfff;
+    <button onclick="invest()">Invest</button>
 
-}
+  </div>
 
-.dashboard {
+  <div id="loadingMsg"></div>
 
-  display: flex;
-
-  flex-direction: column;
-
-  align-items: center;
-
-  padding: 30px;
-
-}
-
-.card {
-
-  background-color: #111;
-
-  border: 1px solid #00bfff;
-
-  border-radius: 10px;
-
-  padding: 20px;
-
-  margin: 15px;
-
-  width: 300px;
-
-  box-shadow: 0 0 10px #00bfff50;
-
-}
-
-.card h2 {
-
-  color: #00bfff;
-
-}
-
-.crypto-address {
-
-  word-break: break-all;
-
-  background: #222;
-
-  padding: 10px;
-
-  border-radius: 5px;
-
-  font-size: 14px;
-
-}
-
-footer {
-
-  text-align: center;
-
-  padding: 20px;
-
-  background-color: #0d0d2b;
-
-  color: #555;
-
-}
-
-  </style>
-
-</head>
-
-<body>
-
-  <header>
-
-    🚀 Investment Dashboard
-
-  </header>  <div class="dashboard">
-
-    <div class="card">
-
-      <h2>Total Invested</h2>
-
-      <p>$2,500.00</p>
-
-    </div><div class="card">
-
-  <h2>Profits Earned</h2>
-
-  <p>$450.00</p>
+  <div id="result"></div>
 
 </div>
-
-<div class="card">
-
-  <h2>Next Payout</h2>
-
-  <p>Aug 5, 2025</p>
-
-</div>
-
-<div class="card">
-
-  <h2>Crypto Wallet Address</h2>
-
-  <p class="crypto-address">bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh</p>
-
-</div>
-
-  </div>  <footer>
-
-    &copy; 2025 YourCompany. All rights reserved.
-
-  </footer>
-
-</body>
-
-</html>

@@ -1,0 +1,75 @@
+body {
+
+  background-color: black;
+
+  color: white;
+
+  font-family: Arial, sans-serif;
+
+  text-align: center;
+
+  padding: 30px;
+
+}
+
+.container {
+
+  background: #111;
+
+  border-radius: 15px;
+
+  padding: 25px;
+
+  max-width: 500px;
+
+  margin: auto;
+
+  box-shadow: 0 0 10px blue;
+
+}
+
+input, select, button {
+
+  padding: 10px;
+
+  margin: 10px 0;
+
+  width: 90%;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 16px;
+
+}
+
+button {
+
+  background-color: blue;
+
+  color: white;
+
+  cursor: pointer;
+
+}
+
+.address {
+
+  color: #00f0ff;
+
+  font-size: 14px;
+
+  margin-bottom: 20px;
+
+}
+
+#loadingMsg {
+
+  margin-top: 20px;
+
+  color: lightblue;
+
+  font-weight: bold;
+
+}
